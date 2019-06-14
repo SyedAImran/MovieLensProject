@@ -136,7 +136,7 @@ glimpse(edx, width = 50)
 
 It can be observed that the *edx* dataframe has `r nrow(edx)` observations of `r ncol(edx)` variables. Also we notice that the variables *userId* and *timestamp* are of type int (discreet); *movieId* and *rating* are of type dbl (continuous); and *titles* and *genres* are of type character (string or text). Additionally, the *genres* variable is a composite character variable with many genres that are saperated by a **|**. This indicates that one movie may be categoried under a number of genres (for instance, RomComs or Sci-fi thriller dramas).
 
-There are `r length(unique(edx$userId))` users in the *edx* dataframe. The number of movies that were rated are `r length(unique(edx$movieId))`. The *rating* is between `r min(edx$rating)` and `r max(edx$rating)`. 
+There are `r length(unique(edx$userId))` users in the *edx* dataframe. The number of movies that were rated are `r length(unique(edx$movieId))`. The *rating* is between `r min(edx$rating)` and `r max(edx$rating)`.  
 
 
 ### Is there an effect of movie genres on ratings?
